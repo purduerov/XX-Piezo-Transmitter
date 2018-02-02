@@ -1557,7 +1557,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="106.68" y1="40.64" x2="106.68" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="C2" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="C2"/>
 <wire x1="134.62" y1="40.64" x2="137.16" y2="40.64" width="0.1524" layer="91"/>
@@ -1598,23 +1598,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="116.84" y1="99.06" x2="116.84" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="U1" gate="U1" pin="FIN"/>
-<pinref part="U2" gate="A" pin="PA5_(ADC5/DO/MISO/OC1B/PCINT5)"/>
-<wire x1="193.04" y1="55.88" x2="193.04" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="78.74" x2="190.5" y2="78.74" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="U1" gate="U1" pin="RIN"/>
-<wire x1="193.04" y1="53.34" x2="195.58" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="U2" gate="A" pin="PA4_(ADC4/USCK/SCL/T1/PCINT4)"/>
-<wire x1="195.58" y1="53.34" x2="195.58" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="81.28" x2="190.5" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="OUT1"/>
@@ -1625,6 +1608,23 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="U1" gate="U1" pin="OUT2"/>
 <wire x1="193.04" y1="45.72" x2="203.2" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="U1" gate="U1" pin="FIN"/>
+<pinref part="U2" gate="A" pin="PA4_(ADC4/USCK/SCL/T1/PCINT4)"/>
+<wire x1="193.04" y1="55.88" x2="193.04" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="81.28" x2="190.5" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="U1" gate="U1" pin="RIN"/>
+<wire x1="193.04" y1="53.34" x2="198.12" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="PA5_(ADC5/DO/MISO/OC1B/PCINT5)"/>
+<wire x1="198.12" y1="53.34" x2="198.12" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="78.74" x2="190.5" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
