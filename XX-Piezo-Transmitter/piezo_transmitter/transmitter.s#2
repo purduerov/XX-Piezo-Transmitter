@@ -1676,8 +1676,8 @@ Standard 6 pin header for AVR programming</description>
 <instance part="C2" gate="G$1" x="106.6038" y="58.293" rot="R180"/>
 <instance part="SV1" gate="1" x="168.656" y="57.912" rot="R180"/>
 <instance part="P+2" gate="VCC" x="181.356" y="60.452" rot="R270"/>
-<instance part="GND" gate="G$1" x="181.864" y="55.372" rot="R90"/>
-<instance part="5V1" gate="G$1" x="156.464" y="55.372" rot="R90"/>
+<instance part="GND" gate="G$1" x="155.956" y="53.848" rot="R270"/>
+<instance part="5V1" gate="G$1" x="179.832" y="55.372" rot="R270"/>
 <instance part="Y1" gate="G$1" x="101.6" y="71.12"/>
 <instance part="ISP1" gate="G$1" x="223.52" y="86.36" rot="R180"/>
 <instance part="5V2" gate="G$1" x="208.28" y="78.74" rot="R180"/>
@@ -1707,11 +1707,6 @@ Standard 6 pin header for AVR programming</description>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="SV1" gate="1" pin="6"/>
-<pinref part="GND" gate="G$1" pin="GND"/>
-<wire x1="176.276" y1="55.372" x2="179.324" y2="55.372" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U2" gate="A" pin="GND"/>
 <pinref part="ISP1" gate="G$1" pin="GND"/>
 <wire x1="190.5" y1="93.98" x2="200.66" y2="93.98" width="0.1524" layer="91"/>
@@ -1735,6 +1730,12 @@ Standard 6 pin header for AVR programming</description>
 <pinref part="GND2" gate="G$1" pin="GND"/>
 <junction x="101.092" y="49.784"/>
 </segment>
+<segment>
+<pinref part="SV1" gate="1" pin="5"/>
+<pinref part="GND" gate="G$1" pin="GND"/>
+<wire x1="161.036" y1="55.372" x2="158.496" y2="55.372" width="0.1524" layer="91"/>
+<wire x1="158.496" y1="55.372" x2="158.496" y2="53.848" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VCC_2" class="0">
 <segment>
@@ -1748,9 +1749,9 @@ Standard 6 pin header for AVR programming</description>
 <pinref part="5V2" gate="G$1" pin="VCC_2"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="1" pin="5"/>
+<pinref part="SV1" gate="1" pin="6"/>
 <pinref part="5V1" gate="G$1" pin="VCC_2"/>
-<wire x1="161.036" y1="55.372" x2="156.464" y2="55.372" width="0.1524" layer="91"/>
+<wire x1="176.276" y1="55.372" x2="179.832" y2="55.372" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">

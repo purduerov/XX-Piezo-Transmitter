@@ -1676,7 +1676,7 @@ Standard 6 pin header for AVR programming</description>
 <instance part="C2" gate="G$1" x="106.6038" y="58.293" rot="R180"/>
 <instance part="SV1" gate="1" x="168.656" y="57.912" rot="R180"/>
 <instance part="P+2" gate="VCC" x="181.356" y="60.452" rot="R270"/>
-<instance part="GND" gate="G$1" x="155.956" y="53.848" rot="R270"/>
+<instance part="GND" gate="G$1" x="186.944" y="57.912" rot="R90"/>
 <instance part="5V1" gate="G$1" x="179.832" y="55.372" rot="R270"/>
 <instance part="Y1" gate="G$1" x="101.6" y="71.12"/>
 <instance part="ISP1" gate="G$1" x="223.52" y="86.36" rot="R180"/>
@@ -1731,10 +1731,9 @@ Standard 6 pin header for AVR programming</description>
 <junction x="101.092" y="49.784"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="1" pin="5"/>
+<pinref part="SV1" gate="1" pin="4"/>
 <pinref part="GND" gate="G$1" pin="GND"/>
-<wire x1="161.036" y1="55.372" x2="158.496" y2="55.372" width="0.1524" layer="91"/>
-<wire x1="158.496" y1="55.372" x2="158.496" y2="53.848" width="0.1524" layer="91"/>
+<wire x1="176.276" y1="57.912" x2="184.404" y2="57.912" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC_2" class="0">
@@ -1807,9 +1806,11 @@ Standard 6 pin header for AVR programming</description>
 <segment>
 <pinref part="U2" gate="A" pin="PA3_(ADC3/T0/PCINT3)"/>
 <wire x1="190.5" y1="83.82" x2="195.58" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="83.82" x2="195.58" y2="57.912" width="0.1524" layer="91"/>
-<pinref part="SV1" gate="1" pin="4"/>
-<wire x1="195.58" y1="57.912" x2="176.276" y2="57.912" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="83.82" x2="195.58" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="48.26" x2="157.48" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="1" pin="5"/>
+<wire x1="157.48" y1="48.26" x2="157.48" y2="55.372" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="55.372" x2="161.036" y2="55.372" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
